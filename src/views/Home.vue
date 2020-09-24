@@ -19,5 +19,24 @@
   };
 </script>
 <style lang="scss" scoped>
+    .banner{
+        $h:28px;
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        > .actions{
+            padding: 8px 0;
+            > a{
+                background: #cccccc;
+                margin: 0 8px;
+                display: inline-block;
+                line-height: $h;
+                border-radius: $h/2;
+                padding:0 8px;
+            }
+        }
+    }
 
 </style>
