@@ -5,8 +5,8 @@
             <h1>极 UI</h1>
             <h2>一个简单的 易上手的 UI 框架</h2>
             <p class="actions">
-                <a href="">GitHub</a>
-                <a href="">开始</a>
+                <a href="https://github.com/wonggamto/wheel-vue3">GitHub</a>
+                <router-link to="/Doc">开始</router-link>
             </p>
         </div>
     </div>
