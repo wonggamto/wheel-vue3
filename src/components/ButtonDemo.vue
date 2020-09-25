@@ -48,6 +48,12 @@
             <Button disabled theme="link">disabled</Button>
             <Button disabled theme="text">disabled</Button>
         </div>
+        <h1>Demo5</h1>
+        <div>
+            <Button loading>loading</Button>
+            <Button loading theme="link">loading</Button>
+            <Button loading theme="text">loading</Button>
+        </div>
     </div>
 </template>
 <script lang="ts">
