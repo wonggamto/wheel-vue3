@@ -1,0 +1,15 @@
+import {createRouter, createWebHashHistory} from 'vue-router';
+import {createWebHashHistory, createRouter} from 'vue-router';
+import Home from './views/Home.vue';
+import Doc from './views/Doc.vue';
+import SwitchDemo from './components/SwitchDemo.vue'
+const history = createWebHashHistory();
+export const router = createRouter({
+  history: history,
+  routes: [
+    {path: '/', component: Home},
+    {path: '/Doc', component:Doc,children:[
+        {path:'switch',component:SwitchDemo}
+      ]}
+  ]
+});
