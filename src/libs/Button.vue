@@ -80,17 +80,17 @@
             }
         }
 
-        &.g-theme-button {
-                &.g-size-big {
-                    font-size: 24px;
-                    height: 48px;
-                    padding:0 16px;
-            }
-            &.g-size-small{
-                font-size:12px;
-                height:20px;
-                padding:0 4px;
-            }
+        &.g-size-big {
+            font-size: 24px;
+            height: 48px;
+            padding: 0 16px;
         }
+
+        &.g-size-small {
+            font-size: 12px;
+            height: 20px;
+            padding: 0 4px;
+        }
+
     }
 </style>

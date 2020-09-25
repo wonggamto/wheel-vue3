@@ -1,5 +1,4 @@
 <template>
-    <div>button</div>
     <h1>Demo1</h1>
     <div>
         <Button>普通</Button>
@@ -10,9 +9,21 @@
     </div>
     <h1>Demo2</h1>
     <div>
-        <Button>普通</Button>
-        <Button size="big">Big</Button>
-        <Button size="small">Small</Button>
+        <div>
+            <Button>普通</Button>
+            <Button size="big">Big</Button>
+            <Button size="small">Small</Button>
+        </div>
+        <div>
+            <Button theme="link" size="big">Big-Link</Button>
+            <Button theme="link">普通</Button>
+            <Button theme="link" size="Small-Link">Small-Link</Button>
+        </div>
+        <div>
+            <Button size="big" theme="text">Big-Text</Button>
+            <Button theme="text">text</Button>
+            <Button size="small" theme="text">Small-Text</Button>
+        </div>
     </div>
 </template>
 <script lang="ts">
@@ -20,11 +31,11 @@
 
   export default {
     components: {Button},
-    setup(){
-      const onClick = ()=>{
+    setup() {
+      const onClick = () => {
         console.log('hi');
-      }
-      return {onClick}
+      };
+      return {onClick};
     }
   };
 </script>
