@@ -1,5 +1,5 @@
 <template>
-    <button @click="toggle" :class="{checked:value}">
+        <button class="g-switch" @click="toggle" :class="{'g-checked':value}">
         <span></span>
     </button>
 </template>
@@ -16,10 +16,10 @@
     }
   };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
     $h: 22px;
     $h2: $h - 4px;
-    button {
+    .g-switch {
         height: $h;
         width: $h*2;
         border: none;
@@ -38,7 +38,7 @@
             transition: all 250ms;
         }
 
-        &.checked {
+        &.g-checked {
             background: #1890ff;
 
             > span {
@@ -56,7 +56,7 @@
             }
         }
 
-        &.checked:active {
+        &.g-checked:active {
             > span {
                 width: $h2 + 4px;
                 margin-left: -4px;
