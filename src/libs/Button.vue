@@ -1,5 +1,5 @@
 <template>
-    <button class="g-button" :class="classes">
+    <button class="g-button" :class="classes" :disabled="disabled">
         <slot/>
     </button>
 </template>
@@ -16,9 +16,13 @@
         type: String,
         default: 'normal',
       },
-      level:{
-        type:String,
-        default:"normal",
+      level: {
+        type: String,
+        default: 'normal',
+      },
+      disabled: {
+        type: Boolean,
+        default: false
       }
     },
     setup(props) {
@@ -41,6 +45,7 @@
     $blue: #40a9ff;
     $radius: 4px;
     $red: red;
+    $grey: grey;
     .g-button {
         box-sizing: border-box;
         height: $h;
@@ -160,6 +165,24 @@
                 &:focus {
                     color: darken($red, 10%)
                 }
+            }
+        }
+
+        &.g-theme-button {
+            &[disabled] {
+                cursor: not-allowed;
+                color: $grey;
+
+                &:hover {
+                    border-color: $grey;
+                }
+            }
+        }
+
+        &.g-theme-link, &.g-theme-text {
+            &[disabled] {
+                cursor: not-allowed;
+                color: $grey;
             }
         }
     }

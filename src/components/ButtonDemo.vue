@@ -42,6 +42,12 @@
                 <Button level="danger" theme="text">Danger-text</Button>
             </div>
         </div>
+        <h1>Demo4</h1>
+        <div>
+            <Button disabled>disabled</Button>
+            <Button disabled theme="link">disabled</Button>
+            <Button disabled theme="text">disabled</Button>
+        </div>
     </div>
 </template>
 <script lang="ts">
