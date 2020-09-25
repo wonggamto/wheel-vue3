@@ -62,7 +62,7 @@
         > main{
             flex-grow: 1;
             padding: 16px;
-            background: #cccccc;
+            background: white;
         }
     }
     aside {
