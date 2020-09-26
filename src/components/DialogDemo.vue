@@ -1,104 +1,11 @@
 <template>
-    <div>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-        <p>dialog Demo</p>
-    </div>
+    <Dialog></Dialog>
 </template>
+<script lang="ts">
+  import Dialog from '../libs/Dialog.vue';
+  export default {
+    components:{
+      Dialog
+    }
+  }
+</script>

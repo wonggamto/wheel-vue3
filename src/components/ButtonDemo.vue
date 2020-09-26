@@ -50,6 +50,7 @@
         </div>
         <h1>Demo5</h1>
         <div>
+            <Button>loading-complete</Button>
             <Button loading>loading</Button>
             <Button loading theme="link">loading</Button>
             <Button loading theme="text">loading</Button>
