@@ -1,16 +1,16 @@
 <template>
     <template v-if="visible">
-        <div class="g-dialog-overlay"></div>
+        <div class="g-dialog-overlay" @click="onClickOverlay"></div>
         <div class="g-dialog-wrapper">
             <div class="g-dialog">
-                <header>标题<span class="g-dialog-close"></span></header>
+                <header>标题<span @click="close" class="g-dialog-close"></span></header>
                 <main>
                     <p>1</p>
                     <p>2</p>
                 </main>
                 <footer>
-                    <Button>取消</Button>
-                    <Button level="main">确认</Button>
+                    <Button @click="cancel">取消</Button>
+                    <Button level="main" @click="ok">确认</Button>
                 </footer>
             </div>
         </div>
@@ -24,9 +24,37 @@
       visible: {
         type: Boolean,
         default: false
+      },
+      closeOnClickOverlay: {
+        type: Boolean,
+        default: true
+      },
+      ok:{
+        type:Function,
+      },
+      cancel:{
+        type:Function
       }
     },
-    components: {Button}
+    components: {Button},
+    setup(props, context) {
+      const close = () => {
+        context.emit('update:visible', false);
+      };
+      const onClickOverlay = () => {
+        if (props.closeOnClickOverlay) {close();}
+      };
+      const ok = () => {
+        if(props.ok?.()!== false){
+          close()
+        }
+      };
+      const cancel = () => {
+        context.emit('cancel')
+        close()
+      };
+      return {close, onClickOverlay,ok,cancel};
+    }
   };
 </script>
 <style lang="scss">
