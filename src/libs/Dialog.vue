@@ -3,10 +3,9 @@
         <div class="g-dialog-overlay" @click="onClickOverlay"></div>
         <div class="g-dialog-wrapper">
             <div class="g-dialog">
-                <header>标题<span @click="close" class="g-dialog-close"></span></header>
+                <header><slot name="title"/><span @click="close" class="g-dialog-close"></span></header>
                 <main>
-                    <p>1</p>
-                    <p>2</p>
+                    <slot name="content"/>
                 </main>
                 <footer>
                     <Button @click="cancel">取消</Button>
