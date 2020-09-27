@@ -1,3 +1,4 @@
+// @ts-ignore
 import Dialog from './Dialog.vue';
 import {createApp, h} from 'vue';
 
