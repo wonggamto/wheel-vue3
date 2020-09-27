@@ -1,18 +1,22 @@
 <template>
     <template v-if="visible">
-        <div class="g-dialog-overlay" @click="onClickOverlay"></div>
-        <div class="g-dialog-wrapper">
-            <div class="g-dialog">
-                <header><slot name="title"/><span @click="close" class="g-dialog-close"></span></header>
-                <main>
-                    <slot name="content"/>
-                </main>
-                <footer>
-                    <Button @click="cancel">取消</Button>
-                    <Button level="main" @click="ok">确认</Button>
-                </footer>
+        <Teleport to="body">
+            <div class="g-dialog-overlay" @click="onClickOverlay"></div>
+            <div class="g-dialog-wrapper">
+                <div class="g-dialog">
+                    <header>
+                        <slot name="title"/>
+                        <span @click="close" class="g-dialog-close"></span></header>
+                    <main>
+                        <slot name="content"/>
+                    </main>
+                    <footer>
+                        <Button @click="cancel">取消</Button>
+                        <Button level="main" @click="ok">确认</Button>
+                    </footer>
+                </div>
             </div>
-        </div>
+        </Teleport>
     </template>
 </template>
 <script lang="ts">
@@ -28,11 +32,11 @@
         type: Boolean,
         default: true
       },
-      ok:{
-        type:Function,
+      ok: {
+        type: Function,
       },
-      cancel:{
-        type:Function
+      cancel: {
+        type: Function
       }
     },
     components: {Button},
@@ -44,15 +48,15 @@
         if (props.closeOnClickOverlay) {close();}
       };
       const ok = () => {
-        if(props.ok?.()!== false){
-          close()
+        if (props.ok?.() !== false) {
+          close();
         }
       };
       const cancel = () => {
-        context.emit('cancel')
-        close()
+        context.emit('cancel');
+        close();
       };
-      return {close, onClickOverlay,ok,cancel};
+      return {close, onClickOverlay, ok, cancel};
     }
   };
 </script>
