@@ -1,7 +1,8 @@
 <template>
     <div>
-        Tab组件
+        <slot/>
     </div>
+
 </template>
 <script lang="ts">
     export default {}
