@@ -3,7 +3,7 @@
     <h1>Demo1</h1>
     <Tabs v-model:selected="x">
         <Tab title="导航1">1</Tab>
-        <Tab title="导航2">2</Tab>
+        <Tab title="导航22222">2</Tab>
     </Tabs>
 </template>
 <script lang="ts">
@@ -17,7 +17,7 @@
       Tab
     },
     setup() {
-      const x = ref('导航2');
+      const x = ref('导航22222');
       return {x};
     }
   };
