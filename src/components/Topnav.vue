@@ -1,10 +1,10 @@
 <template>
     <div class="topNav">
-        <div class="logo">
+        <router-link to="/" class="logo" >
             <svg class="icon">
                 <use xlink:href="#icon-gg"></use>
             </svg>
-        </div>
+        </router-link>
         <ul class="menu">
             <li>
                 <router-link to="/doc">文档</router-link>
@@ -47,6 +47,11 @@
         z-index: 10;
         justify-content: center;
         align-items: center;
+
+        > .icon{
+            width:64px;
+            height:64px;
+        }
 
         > .logo {
             max-width: 6em;
