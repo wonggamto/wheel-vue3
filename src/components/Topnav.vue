@@ -23,7 +23,6 @@
 </script>
 <style lang="scss" scoped>
     .topNav {
-        background: #59af7d;
         display: flex;
         padding: 16px;
         position: fixed;

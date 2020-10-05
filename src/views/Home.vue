@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="topnavAndBanner">
         <Topnav/>
         <div class="banner">
             <h1>极 UI</h1>
@@ -19,6 +19,10 @@
   };
 </script>
 <style lang="scss" scoped>
+    .topnavAndBanner{
+        background: rgb(227,255,253);
+        background: linear-gradient(145deg, rgba(227,255,253,1) 0%, rgba(183,233,230,1) 100%);
+    }
     .banner{
         $h:28px;
         padding: 100px 0;
