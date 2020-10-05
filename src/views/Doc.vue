@@ -51,6 +51,7 @@
   };
 </script>
 <style lang="scss" scoped>
+    $aside-zindex:10;
     .layout{
         display: flex;
         flex-direction: column;
@@ -87,6 +88,7 @@
         left: 0;
         padding-top: 70px;
         height: 100%;
+        z-index: $aside-zindex;
         > h2 {
             padding: 0 16px;
             margin-bottom: 4px;
