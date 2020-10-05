@@ -4,24 +4,18 @@
     <Demo :component="Switch2Demo"/>
 </template>
 <script lang="ts">
-  import Button from '../libs/Button.vue';
-  import {ref} from 'vue';
   import Switch1Demo from './Switch1.demo.vue';
   import Switch2Demo from './Switch2.demo.vue';
-  import 'prismjs';
-  import 'prismjs/themes/prism-okaidia.css'
   import Demo from './Demo.vue';
   const Prism = (window as any).Prism;
   console.log(Prism);
   export default {
     components: {
       Demo,
-      Button
     },
     setup() {
-      const bool = ref(false);
       return {
-        bool, Switch2Demo, Switch1Demo,Prism
+         Switch2Demo, Switch1Demo,
       };
     }
   };
