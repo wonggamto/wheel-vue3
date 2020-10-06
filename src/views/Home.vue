@@ -51,13 +51,23 @@
     $color: #007974;
     .features {
         margin: 64px auto;
-        width: 400px;
+        padding: 0 32px;
 
         @media (min-width: 800px) {
             width: 800px;
+            > ul{
+                > li{
+                    width: 50%;
+                }
+            }
         }
         @media (min-width: 1200px) {
             width: 1200px;
+            > ul{
+                > li{
+                    width: 33.333333%;
+                }
+            }
         }
 
         > ul {
@@ -65,12 +75,13 @@
             flex-wrap: wrap;
 
             > li {
-                width: 400px;
                 margin: 16px 0;
                 display: grid;
                 justify-content: start;
                 align-content: space-between;
-                grid-template-areas: "icon title" "icon text";
+                grid-template-areas:
+                        "icon title"
+                        "icon text";
                 grid-template-columns: 80px auto;
                 grid-template-rows: 1fr auto;
 
