@@ -16,8 +16,8 @@
     </div>
 </template>
 <script lang="ts">
-  import Dialog from '../libs/Dialog.vue';
-  import Button from '../libs/Button.vue';
+  import {Dialog} from '../libs/index';
+  import {Button} from '../libs/index';
   import {
     ref,
     h

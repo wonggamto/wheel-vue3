@@ -5,10 +5,8 @@
     <Button @click="showDialog">show</Button>
 </template>
 <script lang="ts">
-  import Dialog from '../libs/Dialog.vue';
-  import Button from '../libs/Button.vue';
+  import {Button} from '../libs/index';
   import {
-    ref,
     h
   } from 'vue';
   import {
@@ -26,10 +24,8 @@
           title: h('strong', {}, '标题'),
           content: '你好',
           ok() {
-            console.log('ok');
           },
           cancel() {
-            console.log('cancel');
           }
         });
       };
