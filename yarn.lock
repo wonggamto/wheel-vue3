@@ -271,7 +271,7 @@
     "@vue/compiler-core" "3.0.0"
     "@vue/shared" "3.0.0"
 
-"@vue/compiler-sfc@^3.0.0-rc.1", "@vue/compiler-sfc@^3.0.0-rc.5":
+"@vue/compiler-sfc@^3.0.0", "@vue/compiler-sfc@^3.0.0-rc.5":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.0.0.tgz#efa38037984bd64aae315828aa5c1248c6eadca9"
   integrity sha512-1Bn4L5jNRm6tlb79YwqYUGGe+Yc9PRoRSJi67NJX6icdhf84+tRMtESbx1zCLL9QixQXu2+7aLkXHxvh4RpqAA==
@@ -2149,7 +2149,7 @@ vue-router@4.0.0-beta.10:
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.0-beta.10.tgz#45f9e6fee6fcc7094b696e90c2c9f76c3aaf40ed"
   integrity sha512-y3YxV8rO9e4mgFqdyskytRMLzwbxR65ZaAW59xZL+T3M3kHX5p+/XB6j7K5cVm/EgZFOLRb+Zht3ShVaEonn/A==
 
-vue@^3.0.0-rc.1, vue@^3.0.0-rc.5:
+vue@^3.0.0, vue@^3.0.0-rc.5:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.0.0.tgz#cfb5df5c34efce319b113a1667d12b74dcfd9c90"
   integrity sha512-ZMrAARZ32sGIaYKr7Fk2GZEBh/VhulSrGxcGBiAvbN4fhjl3tuJyNFbbbLFqGjndbLoBW66I2ECq8ICdvkKdJw==

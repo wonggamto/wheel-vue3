@@ -1,10 +1,10 @@
 <template>
-    <div class="gulu-tabs">
-        <div class="gulu-tabs-nav" ref="container">
-            <div class="gulu-tabs-nav-item" v-for="(t,index) in titles" :ref="el => { if (t===selected) selectedItem = el }" @click="select(t)" :class="{selected: t=== selected}" :key="index">{{t}}</div>
-            <div class="gulu-tabs-nav-indicator" ref="indicator"></div>
+    <div class="g-tabs">
+        <div class="g-tabs-nav" ref="container">
+            <div class="g-tabs-nav-item" v-for="(t,index) in titles" :ref="el => { if (t===selected) selectedItem = el }" @click="select(t)" :class="{selected: t=== selected}" :key="index">{{t}}</div>
+            <div class="g-tabs-nav-indicator" ref="indicator"></div>
         </div>
-        <div class="gulu-tabs-content">
+        <div class="g-tabs-content">
             <component :is="current" :key="current.props.title" />
         </div>
     </div>
@@ -74,7 +74,7 @@
     $color: #333;
     $border-color: #d9d9d9;
 
-    .gulu-tabs {
+    .g-tabs {
         &-nav {
             display: flex;
             color: $color;
